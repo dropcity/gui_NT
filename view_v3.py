@@ -3,7 +3,7 @@ plt.ion()
 
 class GraphAnimation():
 
-	def __init__(self):
+	def __init__(self, name, illness, age):
 		#create figure and subplots with position 1,2, 3 and 4
 		self.fig = plt.figure()
 		self.x_g1 = 0
@@ -17,6 +17,11 @@ class GraphAnimation():
 
 		#sets name for window
 		self.fig.canvas.set_window_title('Muscle Activity')
+		#Name, ilness and age of patien
+		#TODO fix placing
+		plt.figtext(0.05, 0.95, name)
+		plt.figtext(0.20, 0.95, illness)
+		plt.figtext(0.35, 0.95, age)
 
 		#lists for x and y values
 		self.xdata_g1, self.ydata_g1 = [], []

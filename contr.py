@@ -1,7 +1,10 @@
 import view_v3
 import numpy as np
 
-gui = view_v3.GraphAnimation()
+name = "John Doe"
+illness = "Paraplegia"
+age = "45"
+gui = view_v3.GraphAnimation(name, illness, age)
 
 while True:
 	gui.drawG1(np.random.random_integers(0, 100))
