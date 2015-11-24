@@ -3,12 +3,8 @@ import numpy as np
 
 gui = view_v3.GraphAnimation()
 
-new_y = 0
 while True:
-	new_y = np.random.random_integers(0, 100)
-	gui.updateGraphs(new_y)
-	
-	
-#gui.draw()
-
-
+	gui.drawG1(np.random.random_integers(0, 100))
+	gui.drawG2(np.random.random_integers(0, 100))
+	gui.drawG3(np.random.random_integers(0, 100))
+	gui.drawG4(np.random.random_integers(0, 100))
